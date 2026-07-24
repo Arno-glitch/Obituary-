@@ -1,0 +1,160 @@
+:root {
+    --color-primary: #2f3e46;
+    --color-accent: #52796f;
+    --color-bg: #f7f5f2;
+    --color-border: #d9d3c7;
+    --color-error: #b3261e;
+    --color-success: #2e7d32;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    background: var(--color-bg);
+    color: var(--color-primary);
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.site-header .brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.site-header nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.site-header nav a:hover { text-decoration: underline; }
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.alert {
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.alert-success { background: #e6f4ea; color: var(--color-success); border: 1px solid var(--color-success); }
+.alert-error { background: #fdecea; color: var(--color-error); border: 1px solid var(--color-error); }
+.alert-error ul { margin: 0; padding-left: 1.25rem; }
+
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--color-accent);
+}
+
+.field-error {
+    color: var(--color-error);
+    font-size: 0.875rem;
+    min-height: 1.1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn-primary:hover { background: #3f6259; }
+
+.obituaries-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.obituaries-table th,
+.obituaries-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.pagination { margin-top: 1.5rem; }
+
+.obituary-dates {
+    color: var(--color-accent);
+    font-style: italic;
+}
+
+.obituary-content {
+    margin: 1.5rem 0;
+}
+
+.obituary-author {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+}
+
+.share-buttons {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.share-btn {
+    display: inline-block;
+    margin-right: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.share-btn:hover { background: var(--color-accent); }
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #6b6b6b;
+    font-size: 0.875rem;
+}
